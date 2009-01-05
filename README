@@ -7,6 +7,3 @@ Example of use:
 
   In a form_for block,
   <%= timezone_select :timezone %>
-
-  Or you can specify ISO country code for guessing default value
-  <%= timezone_select :timezone, :country_code => "JP" %>

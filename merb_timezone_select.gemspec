@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{merb_timezone_select}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Genki Takiuchi"]
@@ -24,10 +24,13 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<merb>, [">= 1.0.7.1"])
+      s.add_runtime_dependency(%q<tzinfo>, [">= 0.3.12"])
     else
       s.add_dependency(%q<merb>, [">= 1.0.7.1"])
+      s.add_dependency(%q<tzinfo>, [">= 0.3.12"])
     end
   else
     s.add_dependency(%q<merb>, [">= 1.0.7.1"])
+    s.add_dependency(%q<tzinfo>, [">= 0.3.12"])
   end
 end
